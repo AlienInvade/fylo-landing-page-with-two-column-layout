@@ -172,11 +172,53 @@ a:hover {
 
 .quote {
     background-color: white;
-    width: 460px;
+    width: 420px;
     height: 250px;
     margin-top: 30px;
+    padding: 2rem 3rem;
     border-radius: 5px;
-    box-shadow: 0.5em 0.1em 20px -10px var(--Light-Gray);
+    box-shadow: 0.3em 0.3em 35px -10px var(--Light-Gray);
+}
+
+.avatar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--Very-Dark-Blue);
+    font-weight: var(--font-wght-600);
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.avatar-img {
+    display: inline;
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.avatar-p {
+    padding-left: 1rem;
+}
+
+span {
+    display: block;
+    font-size: small;
+}
+
+/* access section */
+
+.access {
+    background-color: var(--Desaturated-Blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 5rem;
+}
+
+h3 {
+    color: white;
 }
 
 
