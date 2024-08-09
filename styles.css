@@ -80,12 +80,12 @@ body {
     height: 50px;
 }
 
-.header-content input {
+.header-content input[type=email] {
     width: 370px;
     padding: 10px;
 }
 
-.btn {
+input[type=submit] {
     padding: 0px;
     width: 250px;
     color: var(--Light-Grayish-Blue);
@@ -96,7 +96,7 @@ body {
     border-radius: 2.5px;
 }
 
-.btn:hover {
+input[type=submit]:hover {
     cursor: pointer;
     opacity: 0.75;
 }
@@ -153,10 +153,20 @@ a:hover {
 }
 
 .link {
+    position: relative;
     color: var(--Desaturated-Blue);
     width: 170px;
     height: 25px;
-    border-bottom: 1.5px solid var(--Moderate-Cyan);
+}
+
+.link a::after {
+    content: '';
+    background-color: var(--Moderate-Cyan);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
 }
 
 .link a {
@@ -217,6 +227,10 @@ span {
     padding: 7rem 5rem;
 }
 
+.access-content {
+    width: 750px;
+}
+
 h3 {
     font-size: 2rem;
     font-weight: var(--font-wght-700);
@@ -225,12 +239,34 @@ h3 {
 
 .access-p {
     color: white;
-    padding-right: 35rem;
+    padding-right: 7rem;
 }
+
+.access-form {
+    width: 625px;
+}
+
+.access-form input[type=email] {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+
 
 
 /* footer */
 
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Very-Dark-Blue);
+    padding: 10rem 5rem;
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 

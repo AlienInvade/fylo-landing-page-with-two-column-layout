@@ -31,7 +31,8 @@
         Access them wherever you need, share and collaborate with friends, 
         family, and co-workers.</p>
         <form action="">
-          <input type="email" placeholder="Enter your email"><button type="button" class="btn">Get Started</button>
+          <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
+          <input type="submit" value="Get Started" class="btn">
         </form>
       
     </div>
@@ -71,15 +72,12 @@
       <div class="avatar">
         <img class="avatar-img" src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
         <p class="avatar-p"><b>Kyle Burton</b>
-        <span>Founder & CEO, Huddle</span>
+        <span>Founder & CEO, Huddle</span></p>
       </div>
-      
-      </p>
-      
-    </div>
-     
 
     </div>
+    </div>
+
     <div class="productive-img">
       <img src="./images/illustration-2.svg"  width="700" height="500" alt="illustration-2">
     </div>
@@ -87,7 +85,7 @@
   </section>
 
   <section class="access">
-    <div>
+    <div class="access-content">
     <h3>Get early access today</h3>
 
     <p class="access-p paragraph">It only takes a minute to sign up and our free starter tier is extremely generous. 
@@ -96,24 +94,14 @@
     </div>
     <div class="access-form">
       <form action="">
-        <input type="email" placeholder="Enter your email"><button type="button" class="btn">Get Started</button>
+        <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
+        <input type="submit" value="Get Started For Free" class="btn">
       </form>
     </div>
     
   </section>
 
 
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
 
 
 
@@ -121,6 +109,25 @@
  </main>
 
   <footer>
+
+    <div class="">
+      <img src="./images/logo.svg" color="white" alt="logo">
+      <ul>
+      <li>Phone: +1-543-123-4567</li>
+      <li>example@fylo.com</li>
+      </ul> 
+    </div>
+   
+    <div class="link-container">
+      <div class=""><a rel="noopener" href="#">About Us</a></div>
+      <div class=""><a rel="noopener" href="#">Jobs</a></div>
+      <div class=""><a rel="noopener" href="#">Press</a></div>
+      <div class=""><a rel="noopener" href="#">Blog</a></div>
+      <div class=""><a rel="noopener" href="#">Contact Us</a></div>
+      <div class=""><a rel="noopener" href="#">Terms</a></div>
+      <div class=""><a rel="noopener" href="#">Privacy</a></div>
+    </div>
+  
     <p class="attribution">
       Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a rel="noopener" href="#">Your Name Here</a>.
