@@ -135,7 +135,7 @@ a:hover,
 .link-container a:hover {
     cursor: pointer;
     color: var(--Bright-Blue);
-    transition: color 0.15s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 
@@ -312,6 +312,24 @@ ul li {
 
 .blog {
     grid-area: 4 / 1; 
+}
+
+.social-links i {
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links i:hover {
+    cursor: pointer;
+    border: 1px solid var(--Bright-Blue);
+    color: var(--Bright-Blue);
 }
 
 
