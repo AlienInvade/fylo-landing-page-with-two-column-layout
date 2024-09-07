@@ -439,13 +439,16 @@ ul li {
         margin: 10rem 0;
     }
 
+    .stay-productive-container {
+        width: 100%;
+    }
+
     .productive-p {
         text-align: left;
         padding: 0;
     }
 
     .quote {
-        
         width: 365px;
     }
 
@@ -475,12 +478,16 @@ ul li {
 
     footer {
         flex-direction: column;
-        padding: 0.5rem 2rem;
+        padding: 3rem 1rem;
+    }
+
+    .blog {
+        margin-top: 2rem; 
     }
 
 
     .link-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 200px;
         grid-template-rows: 1fr;
         margin: 1rem 0;
         place-content: start;
