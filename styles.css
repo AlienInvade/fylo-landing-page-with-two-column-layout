@@ -50,9 +50,11 @@ body {
     height: 700px;
 }
 
-.header-content {
-    padding-top: 5rem;
-    padding-right: 12rem;
+.header-content,
+.header-img-container, 
+.stay-productive-container,
+.productive-img {
+    width: 50%;
 } 
 
 .header-p,
@@ -80,16 +82,33 @@ body {
     height: 50px;
 }
 
-.header-content input[type=email] {
+.header-content {
+    width: 800px;
+}
+
+.email-container {
+    display: inline-block;
+}
+
+.email-holder {
     width: 370px;
+    border: 1px solid gray;
+    padding: 10px 50px 10px 10px;
+    outline-color: black;
+    border-radius: 2px;  
 }
 
-::placeholder {
+.email-holder::placeholder {
     color: var(--Light-Gray);
-    padding-left: 15px;
+    padding-left: 5px;
+    font-size: 0.9rem;
 }
 
-input[type=submit] {
+.email-input-invalid {
+    border: 1px solid red;
+}
+
+.btn {
     width: 250px;
     color: var(--Light-Grayish-Blue);
     background-color: var(--Bright-Blue);
@@ -99,7 +118,7 @@ input[type=submit] {
     border-radius: 2.5px;
 }
 
-input[type=submit]:hover {
+.btn:hover {
     cursor: pointer;
     opacity: 0.75;
 }
@@ -143,12 +162,6 @@ a:hover,
 
 .productive {
     background: url(./images/bg-curve-desktop.svg) no-repeat center center/cover;
-}
-
-.productive-img {
-    width: 70em;
-    height: 50rem;
-    padding-top: 10rem;
 }
 
 .productive-img img {
@@ -254,16 +267,17 @@ h3 {
     padding-right: 7rem;
 }
 
-.access-form {
-    width: 625px;
+.access-form .email-container {
+    display: block;
 }
 
-.access-form input[type=email] {
-    display: block;
-    width: 100%;
+.access-form .email-holder {
+    width: 700px;
     height: 50px;
-    border: none;
-    border-radius: 2.5px;
+}
+
+.is-invalid-subscription {
+    border: 1px solid var(--Light-Gray);
 }
 
 
@@ -279,8 +293,8 @@ footer {
     padding: 1.5rem 5rem;
 }
 
-.footer-logo {
-    margin: 10px 0;
+.logo-footer-section{
+    width: 180px;
 }
 
 ul img {
@@ -298,7 +312,7 @@ ul li {
     grid-template-rows: 20px 20px 20px 20px;
     column-gap: 15rem;
     row-gap: 1.5rem;
-    place-content: center;
+    place-content: start;
     margin-top: 10.5rem;
     
 }
@@ -342,20 +356,28 @@ ul li {
 
 /* responsive design */
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
 
     * {
-        padding: 0x;
+        margin: 0;
+        padding: 0;
     }
 
     h2, h3 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .header-content {
+        width: 380px;
     }
 
     .header-section-container,
-    .productive,
-    .access {
+    .productive {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -407,14 +429,7 @@ ul li {
         height: 100%;
     }
 
-    form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    input[type=submit], input[type=email] {
+    .email-holder, .btn {
         width: 365px;
     }
 
@@ -423,17 +438,25 @@ ul li {
     .productive {
         margin: 10rem 0;
     }
+
     .productive-p {
         text-align: left;
         padding: 0;
     }
 
     .quote {
+        
         width: 365px;
     }
 
     /* access section */
-
+  
+    .access {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .access-content {
         width: 100%;
     }
@@ -441,10 +464,10 @@ ul li {
     .access-p {
         text-align: center;
         font-size: 16px;
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
     }
 
-    .access-form input[type=email] {
+    .access-form .email-holder, .access-form .btn {
         width: 365px;
     }
 
